@@ -12,16 +12,21 @@
 </head>
 
 <body>
-    <nav class="Navbar BG">
-        <ul class="Navbar-list">
+    <nav class="Navbar BG H-Nav-">
+        <ul class="Navbar-list v-class-">
             <div class="logo">
                 <img src="IMAGES\Logo2.jpg" alt="LOGO">
             </div>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About Us">About Us</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Contact Us">Contact Us</a></li>
+            <li><a href="#Home" class="resp-text">Home</a></li>
+            <li><a href="#About Us" class="resp-text">About Us</a></li>
+            <li><a href="#Services" class="resp-text">Services</a></li>
+            <li><a href="#Contact Us" class="resp-text">Contact Us</a></li>
         </ul>
+        <div class="Hamburger">
+            <div class="Line"></div>
+            <div class="Line"></div>
+            <div class="Line"></div>
+        </div>
     </nav>
 
     <section class="BG LandingPage" id="Home">
@@ -144,7 +149,7 @@
 
     <footer class="footer">
         <div class="FooterSection1">
-            <ul class="Column1">
+            <ul class="Column1 Column_Public">
                 <div class="ContentColumn1">
                     <h3>Sustainable Development</h3>
                     <div>
@@ -159,26 +164,26 @@
                     </div>
                 </div>
             </ul>
-            <ul class="Column2">
+            <ul class="Column2 Column_Public">
                 <div class="ContentColumn2">
                     <h3>UsefulLinks</h3>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Terms Of Service</a></li>
-                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About Us">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Home">Terms Of Service</a></li>
+                    <li><a href="#Home">Privacy Policy</a></li>
                 </div>
 
             </ul>
-            <ul class="Column3">
+            <ul class="Column3 Column_Public">
                 <div class="ContentColumn3">
                     <h3>Our Social Networks</h3>
                     <div class="FooterIconsContainer">
-                        <div class="Footer-Icons"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="Footer-Icons"><i class="fa-brands fa-twitter"></i></div>
-                        <div class="Footer-Icons"><i class="fa-brands fa-instagram"></i></div>
-                        <div class="Footer-Icons"><i class="fa-brands fa-linkedin-in"></i></div>
-                        <div class="Footer-Icons"><i class="fa-brands fa-skype"></i></div>
+                        <div class="Footer-Icons"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="Footer-Icons"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div class="Footer-Icons"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="Footer-Icons"><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div class="Footer-Icons"><a href="https://www.skype.com" target="_blank"><i class="fa-brands fa-skype"></i></a></div>
                     </div>
 
                 </div>
@@ -191,6 +196,8 @@
         </div>
 
     </footer>
+
+    <script src="JAVASCRIPT/JS.js"></script>
 </body>
 
 </html>

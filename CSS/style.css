@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .logo{
     width: 20%;
     display: flex;
@@ -102,7 +106,6 @@ html{
 .SecondHalf img{
     height: 300px;
     width: 300px;
-    border: 5px solid white;
     border-radius: 150px;
     display: block;
     margin: auto;
@@ -402,7 +405,6 @@ html{
 .Footer-Icons{
     width: 40px;
     height: 40px;
-    border: 5px solid white;
     border-radius: 50px;
     background: white;
     font-size: 20px;
@@ -412,22 +414,142 @@ html{
     margin-right: 5px;
 }
 
+.Footer-Icons:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.Footer-Icons a{
+    color: black;
+}
+
+.Footer-Icons:active{
+    color: rgb(170, 170, 170);
+}
+
 .FooterIconsContainer{
     display: flex;
     flex-direction: row;
     margin: 10px 0px;
 }
 
-@media only screen and (max-width: 1262px){
+.Hamburger{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.Line{
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 4px 3px;
+}
+
+.resp-text{
+    font-size: 1vw;
+}
+@media (max-width: 1036px){
+    .Navbar-list{
+        width: 51%;
+    }
+}
+
+@media only screen and (max-width: 1023px)/*For NavBar*/{
     .Navbar-list{
         flex-direction: column;
     }
     
     .Navbar{
         flex-direction: column;
+        height: 195px;
+        transition: all 0.5s ease-out;
     }
 
     .Navbar-list li{
         margin: 8px 0px;
+    }
+
+    .Hamburger{
+        display: block;
+    }
+
+    .H-Nav-resp{
+        height: 58px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1023px)/*For starting content*/{
+    .SecondHalf img{
+        margin-top: 70px;
+    }
+
+    .startingcontent{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .text-big{
+        text-align: center;
+    }
+
+    .text-small{
+        text-align: center;
+    }
+
+    .buttons{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1023px)/*For About Us Section And Contact Us*/{
+    .Section{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 50%;
+        text-align: center;
+    }
+    .Sections-Paragraphs {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1132px)/*For FooterSection1*/{
+    .FooterSection1{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .Column_Public{
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .Column1{
+        width: 100%;
+    }
+
+    .Column2{
+        width: 100%;
+    }
+
+    .Column3{
+        width: 100%;
+    }
+
+    .FooterIconsContainer{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 610px)/*For FooterSection2*/{
+    .footer-text{
+        font-size: 2.5vw;
     }
 }
